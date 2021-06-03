@@ -1,0 +1,17 @@
+.image-client{
+    padding: 2px;
+    border: 1px solid blue;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+    border-radius: 3px;
+    .inner-housing{
+        width: 90px;
+        height: 90px;
+        overflow: hidden;
+        border-radius: 3px;
+        img{
+            width: 200%;
+        }
+    }
+}
