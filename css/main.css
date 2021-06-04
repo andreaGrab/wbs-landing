@@ -24,6 +24,19 @@
   width: 200%;
 }
 
+#visit-showrooms {
+  height: 100vh;
+  background-image: url(../assets/anna-sullivan-f7fZg21B3ms-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+#newsletter {
+  height: 100vh;
+}
+
 /*!
  * Bootstrap v5.0.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
