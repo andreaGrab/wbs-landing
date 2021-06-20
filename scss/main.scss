@@ -1,8 +1,9 @@
-@media screen and (min-width: 1366px){
-    .carousel-inner{
-        height: 660px;
-    }
-}
-
 @import "./custom.scss";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+// components
+.btn{
+    background-color: #032539;
+    border-radius: 4px;
+    width: 100%;
+    border: none;
+}

@@ -1,6 +1,41 @@
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .carousel-inner {
     height: 660px;
+  }
+  .wrapper-image {
+    height: 800px;
+    overflow: hidden;
+  }
+  .wrapper-image img {
+    margin-top: -300px;
+  }
+}
+
+body {
+  background-color: #032539 !important;
+}
+
+header {
+  background-color: #fff;
+}
+
+#ul-nav {
+  width: 80%;
+}
+
+section {
+  min-height: 100vh;
+  background-color: #fff;
+  margin: 0;
+}
+
+.card {
+  margin-bottom: 5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    margin-bottom: 0;
   }
 }
 
@@ -35,6 +70,10 @@
 
 #newsletter {
   height: 100vh;
+}
+
+footer {
+  color: #fff;
 }
 
 /*!
@@ -11502,5 +11541,12 @@ fieldset:disabled .btn {
   .d-print-none {
     display: none !important;
   }
+}
+
+.btn {
+  background-color: #032539;
+  border-radius: 4px;
+  width: 100%;
+  border: none;
 }
 /*# sourceMappingURL=main.css.map */
