@@ -106,6 +106,18 @@ section{
     color: $nauticBlue!important;
 }
 
+// form
+input[type=email]{
+    border: none;
+    background-color: none;
+    border-bottom: 1px solid $goldenCarpet;
+    color: $goldenCarpet;
+    font-size: $d25;
+    &::placeholder{
+        color: $goldenCarpet;
+    }
+}
+
 footer{
     color: #fff;
 }
