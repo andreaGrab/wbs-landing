@@ -1,81 +1,3 @@
-@media screen and (min-width: 1280px) {
-  .carousel-inner {
-    height: 660px;
-  }
-  .wrapper-image {
-    height: 800px;
-    overflow: hidden;
-  }
-  .wrapper-image img {
-    margin-top: -300px;
-  }
-}
-
-body {
-  background-color: #032539 !important;
-}
-
-header {
-  background-color: #fff;
-}
-
-#ul-nav {
-  width: 80%;
-}
-
-section {
-  min-height: 100vh;
-  background-color: #fff;
-  margin: 0;
-}
-
-.card {
-  margin-bottom: 5rem;
-}
-
-@media only screen and (min-width: 768px) {
-  .card {
-    margin-bottom: 0;
-  }
-}
-
-.image-client {
-  padding: 2px;
-  border: 1px solid blue;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -50px;
-  border-radius: 3px;
-}
-
-.image-client .inner-housing {
-  width: 90px;
-  height: 90px;
-  overflow: hidden;
-  border-radius: 3px;
-}
-
-.image-client .inner-housing img {
-  width: 200%;
-}
-
-#visit-showrooms {
-  height: 100vh;
-  background-image: url(../assets/anna-sullivan-f7fZg21B3ms-unsplash.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  text-shadow: 1px 1px 1px #000;
-}
-
-#newsletter {
-  height: 100vh;
-}
-
-footer {
-  color: #fff;
-}
-
 /*!
  * Bootstrap v5.0.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11543,10 +11465,139 @@ fieldset:disabled .btn {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .carousel-inner {
+    height: 660px;
+  }
+  .wrapper-image {
+    height: 800px;
+    overflow: hidden;
+  }
+  .wrapper-image img {
+    margin-top: -300px;
+  }
+}
+
+body {
+  background-color: #032539 !important;
+  font-family: "Work Sans", sans-serif !important;
+  color: #032539 !important;
+}
+
+.title {
+  font-family: "mermaidbold" !important;
+  font-size: 4.375rem;
+}
+
+.title-slide {
+  font-size: 3.75rem;
+  font-weight: 300;
+}
+
+nav a {
+  color: #032539 !important;
+}
+
+nav .active {
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.5625rem;
+  line-height: 2;
+}
+
+header {
+  background-color: #fff;
+}
+
+#ul-nav {
+  width: 80%;
+}
+
+section {
+  min-height: 100vh;
+  background-color: #fff;
+  margin: 0;
+}
+
+.card {
+  margin-bottom: 5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    margin-bottom: 0;
+  }
+}
+
+.image-client {
+  padding: 2px;
+  border: 1px solid #032539;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -50px;
+  border-radius: 3px;
+}
+
+.image-client .inner-housing {
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.image-client .inner-housing img {
+  width: 200%;
+}
+
+#visit-showrooms {
+  height: 100vh;
+  background-image: url(../assets/anna-sullivan-f7fZg21B3ms-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+#newsletter {
+  height: 100vh;
+}
+
+#dropDownFilter {
+  height: 0px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1024px) {
+  #filterBtn {
+    color: #032539 !important;
+  }
+  #dropDownFilter {
+    overflow: visible;
+    height: 100%;
+  }
+}
+
+.product-card {
+  background-color: #CCB29E !important;
+  color: #032539 !important;
+}
+
+footer {
+  color: #fff;
+}
+
 .btn {
   background-color: #032539;
   border-radius: 4px;
-  width: 100%;
   border: none;
+  font-size: 1.5625rem;
+  padding: 1rem 3rem;
+}
+
+.btn-light {
+  background-color: #CCB29E;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

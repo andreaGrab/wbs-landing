@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="assets/fonts/mermaid.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>Workbench Studio | Home</title>
 </head>
 <body>
@@ -18,16 +21,16 @@
                 <div class='collapse navbar-collapse justify-content-end' id='menu-sections'>
                     <ul class="navbar-nav mb-2 mb-2 mb-lg-0 justify-content-between" id='ul-nav'>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link active" href="#">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./pages/about-us.html">Who we are</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Our products</a>
+                            <a class="nav-link" href="./pages/our-products.html">Our products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Get in touch</a>
+                            <a class="nav-link" href="./pages/contacts.html">Get in touch</a>
                         </li>
                     </ul>
                 </div>
@@ -36,7 +39,7 @@
     </header>
 
     <section id='slider'>
-        <h1 class='text-center mb-5'>Avant Collection</h1>
+        <h1 class='text-center mb-5 title-slide'>Avant Collection</h1>
         <div id="carouselExampleSlidesOnly" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -47,20 +50,51 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="carousel-caption d-none">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                </div>
                 <img src="/assets/toa-heftiba-FV3GConVSss-unsplash.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none">
+                    <h5>Second slide label</h5>
+                    <p>Some representative form placeholder second slide content for the first slide.</p>
+                </div>
               </div>
             </div>
           </div>
-          <p class='text-center mt-5'>Introducing Avant the new product lineup that reinvents vintage and modern by fusing past and future.</p>
+          <p class='text-center mt-5 description-slide'>Introducing Avant the new product lineup that reinvents vintage and modern by fusing past and future.</p>
     </section>
+
+    <script>
+        // get DOM target elements
+        const items = document.querySelectorAll('.carousel-item');
+        let titleCaro = document.querySelector('.title-slide');
+        let descriptionCaro = document.querySelector('.description-slide');
+
+        // defining on class change function
+        function onClassChange(item, callback){
+            let itemCaro = item;
+            let lastClass = itemCaro.className;
+            window.setInterval(()=>{
+                let currentClass = itemCaro.className;
+                if(currentClass === "carousel-item active"){
+                    // get title & descritption from bootstrap slide DOM
+                    let titleSlide = itemCaro.childNodes[3].children[0].innerHTML;
+                    let descriptionSlide = itemCaro.childNodes[3].children[1].innerHTML;
+                    // setting target DOM elements to bootstrap DOM elements value
+                    titleCaro.innerHTML = titleSlide;
+                    descriptionCaro.innerHTML = descriptionSlide;
+                    
+                    lastClass=currentClass;
+                }
+            }, 10);
+        }
+
+        let i;
+        for(i=0; i<items.length; i++){
+            onClassChange(items[i]);
+        }
+    </script>
 
     <section id='claim' class="d-flex align-items-center text-center">
         <div class="m-auto">
-            <h1>Who we are</h1>
+            <h1 class='title'>Who we are</h1>
             <p class='mb-5'>Workbench Studio is a furniture company and a design studio since 1945. <br/>
                 We sell high class furniture and design our own limited collections
                 with spetialized designers and craftsmen<br/> with more than 25 years of experience.</p>
@@ -69,12 +103,12 @@
     </section>
 
     <section id='expo-offers' class='text-center position-relative d-none d-lg-block' style="width: 100%; padding-bottom: 20rem;">
-        <div class='d-flex position-absolute' style='width: 40%; z-index: -1;'>
+        <div class='d-flex position-absolute' style='width: 40%;'>
             <img class='w-100' style='border-bottom-right-radius: 100px; margin-top: 70px;' src="./assets/toa-heftiba-FV3GConVSss-unsplash.jpg" alt="room">
             <img class='w-100' style='border-top-left-radius: 100px; margin-left: 50%; margin-bottom: 70px;' src="./assets/amy-hirschi-JaoVGh5aJ3E-unsplash.jpg" alt="consulting">
         </div>
-        <div class='text-center p-lg-5 mx-auto' style="background-color: #fff; border-radius: 0 100px 0 100px; width: 50%; transform: translateY(50%);">
-            <h1>What we offer</h1>
+        <div class='text-center p-lg-5 mx-auto' style="background-color: #fff; border-radius: 0 100px 0 100px; width: 50%; transform: translateY(30%);">
+            <h1 class='title'>What we offer</h1>
             <p>Home furniture made with premium materials and solid build quality.
                 Meet our industrial designers to cutomise products or creating brand new designs to fit your needs.
                 Meet our interior designers to help you creating your perfect space.</p>
@@ -83,7 +117,7 @@
     </section>
 
     <section id='our-values' class='text-center'>
-        <h1>Our values</h1>
+        <h1 class='title'>Our values</h1>
         <div class='d-flex justify-content-between flex-md-row flex-column container my-5'>
             <div>
                 <svg class='mb-4' xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-bullseye" viewBox="0 0 16 16">
@@ -115,7 +149,7 @@
     </section>
 
     <section id='our-clients' class='text-center'>
-        <h1>Our clients</h1>
+        <h1 class='title'>Our clients</h1>
         <div class="container d-flex justify-content-between flex-md-row flex-column mt-5 pt-5">
             <div class="card text-center" style="width: 18rem; margin-left: auto; margin-right: auto;">
                 <div class='image-client'><div class='inner-housing'><img src="assets/dylan-gillis-KdeqA3aTnBY-unsplash.jpg" alt=""></div></div>
@@ -161,14 +195,14 @@
 
     <section id='visit-showrooms' class='text-center d-flex align-items-center justify-content-center'>
         <div>
-            <h1>Visit our<br>Showrooms</h1>
+            <h1 class='title'>Visit our<br>Showrooms</h1>
             <button class='btn btn-primary mt-5'>BOOK NOW</button>
         </div>
     </section>
 
     <section id='newsletter' class='text-center d-flex justify-content-center align-items-center'>
         <div>
-            <h1>Newsletter</h1>
+            <h1 class='title'>Newsletter</h1>
             <p>Sign up to know when new collections arrives to our showroom, get special discounts and more.</p>
             <input type="email" name="email"><br>
             <button class='btn btn-primary mt-3'>SIGNUP</button>

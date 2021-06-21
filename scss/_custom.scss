@@ -10,9 +10,31 @@
         }
     }
 }
+// general
 body{
-    background-color: #032539!important;
+    background-color: $nauticBlue!important;
+    font-family: 'Work Sans', sans-serif!important;
+    color: $nauticBlue!important;
 }
+.title{
+    font-family: 'mermaidbold'!important;
+    font-size: 4.375rem;
+}
+.title-slide{
+    font-size: $d60;
+    font-weight: $light;
+}
+nav a{
+    color: $nauticBlue!important;
+}
+nav .active{
+    font-weight: $medium;
+}
+p{
+    font-size: $d25;
+    line-height: 2;
+}
+
 // header
 header{
     background-color: #fff;
@@ -36,7 +58,7 @@ section{
 }
 .image-client{
     padding: 2px;
-    border: 1px solid blue;
+    border: 1px solid $nauticBlue;
     margin-left: auto;
     margin-right: auto;
     margin-top: -50px;
@@ -63,6 +85,25 @@ section{
 
 #newsletter{
     height: 100vh;
+}
+
+#dropDownFilter{
+    height: 0px;
+    overflow: hidden;
+}
+@media only screen and (min-width:1024px){
+    #filterBtn{
+        color: $nauticBlue!important;
+    }
+    #dropDownFilter{
+        overflow: visible;
+        height: 100%;
+    }
+}
+
+.product-card{
+    background-color: $goldenCarpet!important;
+    color: $nauticBlue!important;
 }
 
 footer{
