@@ -11465,19 +11465,6 @@ fieldset:disabled .btn {
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .carousel-inner {
-    height: 660px;
-  }
-  .wrapper-image {
-    height: 800px;
-    overflow: hidden;
-  }
-  .wrapper-image img {
-    margin-top: -300px;
-  }
-}
-
 body {
   background-color: #032539 !important;
   font-family: "Work Sans", sans-serif !important;
@@ -11486,7 +11473,7 @@ body {
 
 .title {
   font-family: "mermaidbold" !important;
-  font-size: 4.375rem;
+  font-size: 3.125rem;
 }
 
 .title-slide {
@@ -11503,12 +11490,22 @@ nav .active {
 }
 
 p {
-  font-size: 1.5625rem;
+  font-size: 0.9375rem;
   line-height: 2;
 }
 
 header {
   background-color: #fff;
+}
+
+header .navbar-brand {
+  background-image: url(../assets/wbsLogoMobile.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-indent: -9999px;
 }
 
 #ul-nav {
@@ -11523,12 +11520,6 @@ section {
 
 .card {
   margin-bottom: 5rem;
-}
-
-@media only screen and (min-width: 768px) {
-  .card {
-    margin-bottom: 0;
-  }
 }
 
 .image-client {
@@ -11569,19 +11560,42 @@ section {
   overflow: hidden;
 }
 
-@media only screen and (min-width: 1024px) {
-  #filterBtn {
-    color: #032539 !important;
-  }
-  #dropDownFilter {
-    overflow: visible;
-    height: 100%;
-  }
+.product-container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (18rem)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 18rem);
+  grid-auto-rows: minmax(20px, auto);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product-container > * {
+  float: left;
+}
+
+.card-client .card-subtitle {
+  font-size: 0.75rem;
+}
+
+.card-client .card-body .card-text {
+  font-size: 0.75rem;
 }
 
 .product-card {
-  background-color: #CCB29E !important;
+  background-color: #FCCC8D !important;
   color: #032539 !important;
+}
+
+.product-card h5, .product-card .h5 {
+  font-weight: 300;
+  font-size: 2.1875rem !important;
+}
+
+.product-card p {
+  font-size: 0.9375rem;
 }
 
 input[type=email] {
@@ -11608,8 +11622,59 @@ input[type=email]::placeholder {
   color: #CCB29E;
 }
 
+.social-box a svg {
+  fill: #032539;
+}
+
 footer {
   color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  header .navbar-brand {
+    background-image: url(../assets/wbsLogoDesktop.png);
+    width: 260px;
+    height: 40px;
+  }
+  p {
+    font-size: 1.5625rem;
+    line-height: 2;
+  }
+  .card {
+    margin-bottom: 0;
+  }
+  #dropDownFilter button {
+    font-size: 0.9375rem;
+  }
+  .title {
+    font-size: 3.75rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #filterBtn {
+    color: #032539 !important;
+  }
+  #dropDownFilter {
+    overflow: visible;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .carousel-inner {
+    height: 660px;
+  }
+  .wrapper-image {
+    height: 800px;
+    overflow: hidden;
+  }
+  .wrapper-image img {
+    margin-top: -300px;
+  }
+  .title {
+    font-size: 4.375rem;
+  }
 }
 
 .btn {
@@ -11617,7 +11682,8 @@ footer {
   border-radius: 4px;
   border: none;
   font-size: 1.5625rem;
-  padding: 1rem 1.5rem;
+  padding: 0.5rem 1.5rem;
+  font-weight: 300;
 }
 
 .btn-light {

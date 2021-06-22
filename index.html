@@ -39,7 +39,7 @@
     </header>
 
     <section id='slider'>
-        <h1 class='text-center mb-5 title-slide'>Avant Collection</h1>
+        <h1 class='text-center mb-5 title-slide'></h1>
         <div id="carouselExampleSlidesOnly" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -58,7 +58,7 @@
               </div>
             </div>
           </div>
-          <p class='text-center mt-5 description-slide'>Introducing Avant the new product lineup that reinvents vintage and modern by fusing past and future.</p>
+          <p class='text-center mt-5 description-slide'></p>
     </section>
 
     <script>
@@ -68,7 +68,7 @@
         let descriptionCaro = document.querySelector('.description-slide');
 
         // defining on class change function
-        function onClassChange(item, callback){
+        function onClassChange(item){
             let itemCaro = item;
             let lastClass = itemCaro.className;
             window.setInterval(()=>{
@@ -119,7 +119,7 @@
 
     <section id='our-values' class='text-center'>
         <h1 class='title'>Our values</h1>
-        <div class='d-flex justify-content-between flex-md-row flex-column container my-5'>
+        <div class='d-flex justify-content-between flex-md-row flex-column container py-5'>
             <div>
                 <svg class='mb-4' xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-bullseye" viewBox="0 0 16 16">
                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -152,43 +152,43 @@
     <section id='our-clients' class='text-center'>
         <h1 class='title'>Our clients</h1>
         <div class="container d-flex justify-content-between flex-md-row flex-column mt-5 pt-5">
-            <div class="card text-center" style="width: 18rem; margin-left: auto; margin-right: auto;">
+            <div class="card text-center card-client" style="width: 18rem; margin-left: auto; margin-right: auto;">
                 <div class='image-client'><div class='inner-housing'><img src="assets/dylan-gillis-KdeqA3aTnBY-unsplash.jpg" alt=""></div></div>
                 <div class="card-body">
-                  <h5 class="card-title">Name</h5>
-                  <h6 class="card-subtitle mb-2 text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                  <h5 class="card-title">Alessia Sandrini</h5>
+                  <h6 class="card-subtitle mb-2 text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
                     <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
                     <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                  </svg>Location</h6>
+                  </svg> Milano, Italy</h6>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <hr>
-                  <h6>Profession at <strong>Company</strong></h6>
+                  <h6>Journalist at <strong>La Moda S.r.L</strong></h6>
                 </div>
               </div>
-              <div class="card text-center" style="width: 18rem; margin-left: auto; margin-right: auto;">
+              <div class="card text-center card-client" style="width: 18rem; margin-left: auto; margin-right: auto;">
                 <div class='image-client'><div class='inner-housing'><img src="assets/dylan-gillis-KdeqA3aTnBY-unsplash.jpg" alt=""></div></div>
                 <div class="card-body">
-                  <h5 class="card-title">Name</h5>
-                  <h6 class="card-subtitle mb-2 text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                  <h5 class="card-title">Mark Erikson</h5>
+                  <h6 class="card-subtitle mb-2 text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
                     <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
                     <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                  </svg>Location</h6>
+                  </svg> Berlin, Germany</h6>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <hr>
-                  <h6>Profession at <strong>Company</strong></h6>
+                  <h6>Journalist at <strong>Dodo GmbH</strong></h6>
                 </div>
               </div>
-              <div class="card text-center" style="width: 18rem; margin-left: auto; margin-right: auto;">
+              <div class="card text-center card-client" style="width: 18rem; margin-left: auto; margin-right: auto;">
                 <div class='image-client'><div class='inner-housing'><img src="assets/dylan-gillis-KdeqA3aTnBY-unsplash.jpg" alt=""></div></div>
                 <div class="card-body">
-                  <h5 class="card-title">Name</h5>
-                  <h6 class="card-subtitle mb-2 text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                  <h5 class="card-title">Abigail Miller</h5>
+                  <h6 class="card-subtitle mb-2 text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
                     <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
                     <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                  </svg>Location</h6>
+                  </svg> New York, USA</h6>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <hr>
-                  <h6>Profession at <strong>Company</strong></h6>
+                  <h6>Journalist at <strong>Design-Kaba</strong></h6>
                 </div>
               </div>
         </div>
@@ -206,7 +206,7 @@
             <h1 class='title'>Newsletter</h1>
             <p>Sign up to know when new collections arrives to our showroom, get special discounts and more.</p>
             <input type="email" name="email" placeholder='Your email here...'><br>
-            <button class='btn btn-primary mt-3'>SIGNUP</button>
+            <button class='btn btn-primary mt-3 mt-5'>SIGNUP</button>
         </div>
     </section>
 
