@@ -42,6 +42,16 @@
               </svg> Filter by:</h3>
             <div id='dropDownFilter' class='d-flex flex-column flex-md-row justify-content-md-between align-items-md-center w-100'>
                 <div>
+                    <input type="checkbox" name="a" class='mark'>
+                    <label for='a'>A</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="b" class='mark'>
+                    <label for='b'>B</label>
+                </div>
+                <p>-</p>
+                <div>
                     <input type="checkbox" name="kitchen">
                     <label for='kitchen'>Kitchen</label>
                 </div>
@@ -66,72 +76,72 @@
                     <label for='collections'>Collections</label>
                 </div>
     
-                <button class='btn btn-secondary mb-3 mb-md-0'>Reset All</button>
-                <button class='btn btn-primary'>Apply</button>
+                <button id='resetFilter' class='btn btn-secondary mb-3 mb-md-0'>Reset All</button>
+                <button id='applyFilter' class='btn btn-primary'>Apply</button>
             </div>
         </div>
 
         <div class="container mt-5 pb-5 product-container">
-            <div class="card product-card" style='width: 18rem;'>
+            <div class="card product-card" style='width: 18rem;' data-tagtype="a">
                 <img class="card-img-top" src="../assets/products/christopher-jolly-GqbU78bdJFM-unsplash.jpg" alt="product">
                 <div class="card-body">
-                    <h5 class='card-title'>Name product</h5>
+                    <h5 class='card-title'>Name product A</h5>
                     <p class='card-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis tempore corrupti maiores et. </p>
                     <a href="#" class='btn btn-primary'>BOOK A CALL</a>
                 </div>
             </div>
-            <div class="card product-card" style='width: 18rem;'>
-                <img class="card-img-top" src="../assets/products/sam-moqadam-kvmdsTrGOBM-unsplash.jpg" alt="product">
-                <div class="card-body">
-                    <h5 class='card-title'>Name product</h5>
-                    <p class='card-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis tempore corrupti maiores et. </p>
-                    <a href="#" class='btn btn-primary'>BOOK A CALL</a>
-                </div>
-            </div>
-            <div class="card product-card" style='width: 18rem;'>
-                <img class="card-img-top" src="../assets/products/kari-shea-AMyjxxLEHU4-unsplash.jpg" alt="product">
-                <div class="card-body">
-                    <h5 class='card-title'>Name product</h5>
-                    <p class='card-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis tempore corrupti maiores et. </p>
-                    <a href="#" class='btn btn-primary'>BOOK A CALL</a>
-                </div>
-            </div>
-            <div class="card product-card" style='width: 18rem;'>
-                <img class="card-img-top" src="../assets/products/inside-weather-2EUdAWQ3Uko-unsplash.jpg" alt="product">
-                <div class="card-body">
-                    <h5 class='card-title'>Name product</h5>
-                    <p class='card-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis tempore corrupti maiores et. </p>
-                    <a href="#" class='btn btn-primary'>BOOK A CALL</a>
-                </div>
-            </div>
-            <div class="card product-card" style='width: 18rem;'>
+            <div class="card product-card" style='width: 18rem;' data-tagtype="a">
                 <img class="card-img-top" src="../assets/products/christopher-jolly-GqbU78bdJFM-unsplash.jpg" alt="product">
                 <div class="card-body">
-                    <h5 class='card-title'>Name product</h5>
+                    <h5 class='card-title'>Name product A</h5>
                     <p class='card-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis tempore corrupti maiores et. </p>
                     <a href="#" class='btn btn-primary'>BOOK A CALL</a>
                 </div>
             </div>
-            <div class="card product-card" style='width: 18rem;'>
+            <div class="card product-card" style='width: 18rem;' data-tagtype="a">
                 <img class="card-img-top" src="../assets/products/christopher-jolly-GqbU78bdJFM-unsplash.jpg" alt="product">
                 <div class="card-body">
-                    <h5 class='card-title'>Name product</h5>
+                    <h5 class='card-title'>Name product A</h5>
                     <p class='card-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis tempore corrupti maiores et. </p>
                     <a href="#" class='btn btn-primary'>BOOK A CALL</a>
                 </div>
             </div>
-            <div class="card product-card" style='width: 18rem;'>
+            <div class="card product-card" style='width: 18rem;' data-tagtype="a">
                 <img class="card-img-top" src="../assets/products/christopher-jolly-GqbU78bdJFM-unsplash.jpg" alt="product">
                 <div class="card-body">
-                    <h5 class='card-title'>Name product</h5>
+                    <h5 class='card-title'>Name product A</h5>
                     <p class='card-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis tempore corrupti maiores et. </p>
                     <a href="#" class='btn btn-primary'>BOOK A CALL</a>
                 </div>
             </div>
-            <div class="card product-card" style='width: 18rem;'>
+            <div class="card product-card" style='width: 18rem;' data-tagtype="b">
                 <img class="card-img-top" src="../assets/products/christopher-jolly-GqbU78bdJFM-unsplash.jpg" alt="product">
                 <div class="card-body">
-                    <h5 class='card-title'>Name product</h5>
+                    <h5 class='card-title'>Name product B</h5>
+                    <p class='card-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis tempore corrupti maiores et. </p>
+                    <a href="#" class='btn btn-primary'>BOOK A CALL</a>
+                </div>
+            </div>
+            <div class="card product-card" style='width: 18rem;' data-tagtype="b">
+                <img class="card-img-top" src="../assets/products/christopher-jolly-GqbU78bdJFM-unsplash.jpg" alt="product">
+                <div class="card-body">
+                    <h5 class='card-title'>Name product B</h5>
+                    <p class='card-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis tempore corrupti maiores et. </p>
+                    <a href="#" class='btn btn-primary'>BOOK A CALL</a>
+                </div>
+            </div>
+            <div class="card product-card" style='width: 18rem;' data-tagtype="b">
+                <img class="card-img-top" src="../assets/products/christopher-jolly-GqbU78bdJFM-unsplash.jpg" alt="product">
+                <div class="card-body">
+                    <h5 class='card-title'>Name product B</h5>
+                    <p class='card-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis tempore corrupti maiores et. </p>
+                    <a href="#" class='btn btn-primary'>BOOK A CALL</a>
+                </div>
+            </div>
+            <div class="card product-card" style='width: 18rem;' data-tagtype="b">
+                <img class="card-img-top" src="../assets/products/christopher-jolly-GqbU78bdJFM-unsplash.jpg" alt="product">
+                <div class="card-body">
+                    <h5 class='card-title'>Name product B</h5>
                     <p class='card-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis tempore corrupti maiores et. </p>
                     <a href="#" class='btn btn-primary'>BOOK A CALL</a>
                 </div>
@@ -143,6 +153,7 @@
         <p>© Copyright 2021 Workbench Studio S.p.a. All rights reserved.</p>
     </footer>
     <script>
+        // dropdown mobile filter
         const dropDownFilter = document.querySelector('#dropDownFilter');
         const filterBtn = document.querySelector('#filterBtn');
         
@@ -155,6 +166,61 @@
                 }
             });
         }
+
+        // filter logic
+        const filterButton = document.querySelector('#applyFilter');
+        const resetButton = document.querySelector('#resetFilter');
+        const products = document.querySelectorAll('.product-card')
+        const checkMarks = document.querySelectorAll('.mark');
+
+        filterButton.addEventListener('click', ()=>{
+            let tags = [];
+            function isNotMarked(product, markedTags){
+                let mt;
+                for(mt=0; mt<markedTags.length; mt++){
+                    if(product != markedTags[mt].name){
+                        return true;
+                    }else{
+                        return false;
+                    }
+                }
+            }
+
+            // get marked tags
+            let i;
+            for(i=0; i<checkMarks.length; i++){
+                if(checkMarks[i].checked){tags.push(checkMarks[i])};
+            }
+
+            // loop through marked tags
+            let t;
+            for(t=0; t<tags.length; t++){
+                let tag = tags[t];
+                let p;
+                // loop through products
+                for(p=0; p<products.length;p++){
+                    let productTag = products[p].getAttribute('data-tagType');
+                    if(productTag != tag.name && isNotMarked(productTag, tags)){
+                        products[p].style.display = 'none';
+                    }else{
+                        products[p].style.display = 'initial';
+                    }
+                }
+            }
+        });
+
+        resetButton.addEventListener('click', ()=>{
+            // display all products
+            for(p=0; p<products.length;p++){
+                products[p].style.display = 'initial';
+            }
+
+            // reset checkboxes
+            let i;
+            for(i=0; i<checkMarks.length; i++){
+                checkMarks[i].checked = false;
+            }
+        });
         
     </script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
