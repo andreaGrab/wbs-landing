@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <script src="../js/products-page.js" defer></script>
     <title>Workbench Studio | Home</title>
 </head>
 <body>
     <header class='pt-3 pb-5'>
         <nav class='navbar navbar-expand-lg navbar-light'>
             <div class='container'>
-                <a class='navbar-brand' href="#">Workbench STUDIO</a>
+                <a class='navbar-brand' href="../index.html">Workbench STUDIO</a>
                 <button class='navbar-toggler' type="button" data-bs-toggle='collapse' data-bs-target='#menu-sections'>
                     <span class='navbar-toggler-icon'></span>
                 </button>
@@ -24,7 +25,7 @@
                             <a class="nav-link" href="./about-us.html">Who we are</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Our products</a>
+                            <a class="nav-link active" href="#">Our products</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./contacts.html">Get in touch</a>
@@ -42,37 +43,27 @@
               </svg> Filter by:</h3>
             <div id='dropDownFilter' class='d-flex flex-column flex-md-row justify-content-md-between align-items-md-center w-100'>
                 <div>
-                    <input type="checkbox" name="a" class='mark'>
-                    <label for='a'>A</label>
-                </div>
-
-                <div>
-                    <input type="checkbox" name="b" class='mark'>
-                    <label for='b'>B</label>
-                </div>
-                <p>-</p>
-                <div>
-                    <input type="checkbox" name="kitchen">
+                    <input type="checkbox" name="kitchen" class='mark'>
                     <label for='kitchen'>Kitchen</label>
                 </div>
     
                 <div>
-                    <input type="checkbox" name="living">
+                    <input type="checkbox" name="living" class='mark'>
                     <label for='living'>Living</label>
                 </div>
     
                 <div>
-                    <input type="checkbox" name="bath">
+                    <input type="checkbox" name="bath" class='mark'>
                     <label for='bath'>Bath</label>
                 </div>
     
                 <div>
-                    <input type="checkbox" name="bed">
+                    <input type="checkbox" name="bed" class='mark'>
                     <label for='bed'>Bed</label>
                 </div>
     
                 <div class="mb-5 mb-md-0">
-                    <input type="checkbox" name="collections">
+                    <input type="checkbox" name="collections" class='mark'>
                     <label for='collections'>Collections</label>
                 </div>
     
@@ -81,148 +72,14 @@
             </div>
         </div>
 
-        <div class="container mt-5 pb-5 product-container">
-            <div class="card product-card" style='width: 18rem;' data-tagtype="a">
-                <img class="card-img-top" src="../assets/products/christopher-jolly-GqbU78bdJFM-unsplash.jpg" alt="product">
-                <div class="card-body">
-                    <h5 class='card-title'>Name product A</h5>
-                    <p class='card-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis tempore corrupti maiores et. </p>
-                    <a href="#" class='btn btn-primary'>BOOK A CALL</a>
-                </div>
-            </div>
-            <div class="card product-card" style='width: 18rem;' data-tagtype="a">
-                <img class="card-img-top" src="../assets/products/christopher-jolly-GqbU78bdJFM-unsplash.jpg" alt="product">
-                <div class="card-body">
-                    <h5 class='card-title'>Name product A</h5>
-                    <p class='card-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis tempore corrupti maiores et. </p>
-                    <a href="#" class='btn btn-primary'>BOOK A CALL</a>
-                </div>
-            </div>
-            <div class="card product-card" style='width: 18rem;' data-tagtype="a">
-                <img class="card-img-top" src="../assets/products/christopher-jolly-GqbU78bdJFM-unsplash.jpg" alt="product">
-                <div class="card-body">
-                    <h5 class='card-title'>Name product A</h5>
-                    <p class='card-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis tempore corrupti maiores et. </p>
-                    <a href="#" class='btn btn-primary'>BOOK A CALL</a>
-                </div>
-            </div>
-            <div class="card product-card" style='width: 18rem;' data-tagtype="a">
-                <img class="card-img-top" src="../assets/products/christopher-jolly-GqbU78bdJFM-unsplash.jpg" alt="product">
-                <div class="card-body">
-                    <h5 class='card-title'>Name product A</h5>
-                    <p class='card-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis tempore corrupti maiores et. </p>
-                    <a href="#" class='btn btn-primary'>BOOK A CALL</a>
-                </div>
-            </div>
-            <div class="card product-card" style='width: 18rem;' data-tagtype="b">
-                <img class="card-img-top" src="../assets/products/christopher-jolly-GqbU78bdJFM-unsplash.jpg" alt="product">
-                <div class="card-body">
-                    <h5 class='card-title'>Name product B</h5>
-                    <p class='card-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis tempore corrupti maiores et. </p>
-                    <a href="#" class='btn btn-primary'>BOOK A CALL</a>
-                </div>
-            </div>
-            <div class="card product-card" style='width: 18rem;' data-tagtype="b">
-                <img class="card-img-top" src="../assets/products/christopher-jolly-GqbU78bdJFM-unsplash.jpg" alt="product">
-                <div class="card-body">
-                    <h5 class='card-title'>Name product B</h5>
-                    <p class='card-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis tempore corrupti maiores et. </p>
-                    <a href="#" class='btn btn-primary'>BOOK A CALL</a>
-                </div>
-            </div>
-            <div class="card product-card" style='width: 18rem;' data-tagtype="b">
-                <img class="card-img-top" src="../assets/products/christopher-jolly-GqbU78bdJFM-unsplash.jpg" alt="product">
-                <div class="card-body">
-                    <h5 class='card-title'>Name product B</h5>
-                    <p class='card-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis tempore corrupti maiores et. </p>
-                    <a href="#" class='btn btn-primary'>BOOK A CALL</a>
-                </div>
-            </div>
-            <div class="card product-card" style='width: 18rem;' data-tagtype="b">
-                <img class="card-img-top" src="../assets/products/christopher-jolly-GqbU78bdJFM-unsplash.jpg" alt="product">
-                <div class="card-body">
-                    <h5 class='card-title'>Name product B</h5>
-                    <p class='card-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis tempore corrupti maiores et. </p>
-                    <a href="#" class='btn btn-primary'>BOOK A CALL</a>
-                </div>
-            </div>
+        <div id='container-products' class="container mt-5 pb-5 product-container">
+            
         </div>   
     </section>
 
     <footer class='text-center py-4'>
         <p>© Copyright 2021 Workbench Studio S.p.a. All rights reserved.</p>
     </footer>
-    <script>
-        // dropdown mobile filter
-        const dropDownFilter = document.querySelector('#dropDownFilter');
-        const filterBtn = document.querySelector('#filterBtn');
-        
-        if(window.innerWidth<=768){
-            filterBtn.addEventListener('click', ()=>{
-                if(dropDownFilter.style.height === "100%"){
-                    dropDownFilter.style.height = '0px';
-                }else{
-                    dropDownFilter.style.height = '100%';
-                }
-            });
-        }
-
-        // filter logic
-        const filterButton = document.querySelector('#applyFilter');
-        const resetButton = document.querySelector('#resetFilter');
-        const products = document.querySelectorAll('.product-card')
-        const checkMarks = document.querySelectorAll('.mark');
-
-        filterButton.addEventListener('click', ()=>{
-            let tags = [];
-            function isNotMarked(product, markedTags){
-                let mt;
-                for(mt=0; mt<markedTags.length; mt++){
-                    if(product != markedTags[mt].name){
-                        return true;
-                    }else{
-                        return false;
-                    }
-                }
-            }
-
-            // get marked tags
-            let i;
-            for(i=0; i<checkMarks.length; i++){
-                if(checkMarks[i].checked){tags.push(checkMarks[i])};
-            }
-
-            // loop through marked tags
-            let t;
-            for(t=0; t<tags.length; t++){
-                let tag = tags[t];
-                let p;
-                // loop through products
-                for(p=0; p<products.length;p++){
-                    let productTag = products[p].getAttribute('data-tagType');
-                    if(productTag != tag.name && isNotMarked(productTag, tags)){
-                        products[p].style.display = 'none';
-                    }else{
-                        products[p].style.display = 'initial';
-                    }
-                }
-            }
-        });
-
-        resetButton.addEventListener('click', ()=>{
-            // display all products
-            for(p=0; p<products.length;p++){
-                products[p].style.display = 'initial';
-            }
-
-            // reset checkboxes
-            let i;
-            for(i=0; i<checkMarks.length; i++){
-                checkMarks[i].checked = false;
-            }
-        });
-        
-    </script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
