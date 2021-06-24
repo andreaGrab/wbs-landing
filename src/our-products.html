@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../assets/fonts/mermaid.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="../js/products-page.js" defer></script>
+    <title>Workbench Studio | Home</title>
+</head>
+<body>
+    <header class='pt-3 pb-5'>
+        <nav class='navbar navbar-expand-lg navbar-light'>
+            <div class='container'>
+                <a class='navbar-brand' href="./index.html">Workbench STUDIO</a>
+                <button class='navbar-toggler' type="button" data-bs-toggle='collapse' data-bs-target='#menu-sections'>
+                    <span class='navbar-toggler-icon'></span>
+                </button>
+                <div class='collapse navbar-collapse justify-content-end' id='menu-sections'>
+                    <ul class="navbar-nav mb-2 mb-2 mb-lg-0 justify-content-between" id='ul-nav'>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about-us.html">Who we are</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Our products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacts.html">Get in touch</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class='container d-flex flex-column flex-xl-row align-items-md-center filter-container'>
+            <h3 id='filterBtn' style='color: #1C768F' class='w-100'><svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="bi bi-funnel-fill" viewBox="0 0 16 16">
+                <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2z"/>
+              </svg> Filter by:</h3>
+            <div id='dropDownFilter' class='d-flex flex-column flex-md-row justify-content-md-between align-items-md-center w-100'>
+                <div>
+                    <input type="checkbox" name="kitchen" class='mark'>
+                    <label for='kitchen'>Kitchen</label>
+                </div>
+    
+                <div>
+                    <input type="checkbox" name="living" class='mark'>
+                    <label for='living'>Living</label>
+                </div>
+    
+                <div>
+                    <input type="checkbox" name="bath" class='mark'>
+                    <label for='bath'>Bath</label>
+                </div>
+    
+                <div>
+                    <input type="checkbox" name="bed" class='mark'>
+                    <label for='bed'>Bed</label>
+                </div>
+    
+                <div class="mb-5 mb-md-0">
+                    <input type="checkbox" name="collections" class='mark'>
+                    <label for='collections'>Collections</label>
+                </div>
+    
+                <button id='resetFilter' class='btn btn-secondary mb-3 mb-md-0'>Reset All</button>
+                <button id='applyFilter' class='btn btn-primary'>Apply</button>
+            </div>
+        </div>
+
+        <div id='container-products' class="container mt-5 pb-5 product-container">
+            
+        </div>   
+    </section>
+
+    <footer class='text-center py-4'>
+        <p>© Copyright 2021 Workbench Studio S.p.a. All rights reserved.</p>
+    </footer>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
